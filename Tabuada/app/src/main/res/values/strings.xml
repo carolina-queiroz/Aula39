@@ -4,4 +4,8 @@
     <string name="informative_text">Vamos calcular a tabuada, digite um valor e daremos a você a tabuada do número escolhido!</string>
     <string name="valor_tabuada">Digite o valor da tabuada</string>
     <string name="calcular_tabuada">calcular tabuada</string>
+    <string name="recalcular_tabuada">recalcular tabuada</string>
+    <string name="tabuada_calculada">tabuada calculada</string>
+    <string name="tabuada_do_X">tabuada do $numeroDigitado</string>
+    <string name="tabuada_do_numeroDigitado">tabuada_do_x</string>
 </resources>
