@@ -11,7 +11,7 @@
         android:id="@+id/tvNumeroDaTabuada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tabuada_do_numeroDigitado"
+        android:text="@string/resultado_tabuada"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/tvCalculoTabuada"

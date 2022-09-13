@@ -17,7 +17,7 @@ class ResultadoActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = getString(R.string.tabuada_do_numeroDigitado)
+        supportActionBar?.title = getString(R.string.resultado_tabuada)
 
         recuperarNumeroDigitado()
 
@@ -29,7 +29,7 @@ class ResultadoActivity : AppCompatActivity() {
     }
 
     private fun recuperarNumeroDigitado(){
-        val numero = intent.getStringExtra("NUMERO")
+        val numero = intent.getStringExtra("Numero")
         if(numero != null){
             exibirTituloTabuada(numero.toInt())
             exibirCalculoDaTabuada(numero.toInt())
@@ -42,7 +42,7 @@ class ResultadoActivity : AppCompatActivity() {
 
     private fun exibirCalculoDaTabuada(numero: Int) {
 
-        binding.tvCalculoTabuada.text = (" $numero x 0 = ${numero * 0}" +
+        binding.tvCalculoTabuada.text = " $numero x 0 = ${numero * 0}" +
                 "\n $numero x 1 = ${numero * 1}" +
                 "\n $numero x 2 = ${numero * 2}" +
                 "\n $numero x 3 = ${numero * 3}" +
@@ -52,7 +52,7 @@ class ResultadoActivity : AppCompatActivity() {
                 "\n $numero x 7 = ${numero * 7}" +
                 "\n $numero x 8 = ${numero * 8}" +
                 "\n $numero x 9 = ${numero * 9}" +
-                "\n $numero x 10 = ${numero * 10}")
+                "\n $numero x 10 = ${numero * 10}"
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

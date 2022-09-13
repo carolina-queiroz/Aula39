@@ -3,11 +3,13 @@ package com.example.tabuada.home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import com.example.tabuada.R
 import com.example.tabuada.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityHomeBinding
 
+    private lateinit var binding: ActivityHomeBinding
     private lateinit var numeroDigitado: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
         recuperarNumeroDigitado()
         if (!verificarCampos()){
             val intent = Intent(this, ResultadoActivity::class.java).apply {
-                putExtra("NUMERO", numeroDigitado)
+                putExtra("Numero", numeroDigitado)
             }
             startActivity(intent)
         }
@@ -41,12 +43,11 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun verificarCampos(): Boolean{
-        when{
-            this.numeroDigitado.isEmpty() -> {
-                binding.editTextTabuada.error = "É obrigatório digitar um número para calcular"
-                return true
-            }
+        return if (numeroDigitado.isEmpty()) {
+            Toast.makeText(this, R.string.MSG_PREENCHER_VALORES, Toast.LENGTH_LONG).show()
+            true
+        } else {
+            false
         }
-        return true
     }
 }
