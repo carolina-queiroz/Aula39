@@ -3,9 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/christal.camillo/Desktop/Aula39/Tabuada/app/src/main/res/layout/activity_home.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/christal.camillo/Desktop/Aula39/Tabuada/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/christal.camillo/Desktop/Aula39/Tabuada/app/src/main/res/layout/activity_main.xml" value="0.32760416666666664" />
-        <entry key="..\:/Users/christal.camillo/Desktop/Aula39/Tabuada/app/src/main/res/layout/activity_resultado.xml" value="0.3307291666666667" />
+        <entry key="..\:/Users/christal.camillo/Desktop/Aula39/Tabuada/app/src/main/res/layout/activity_resultado.xml" value="0.4" />
       </map>
     </option>
   </component>
@@ -14,5 +14,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="Tabuada.app" />
+      </set>
+    </option>
   </component>
 </project>

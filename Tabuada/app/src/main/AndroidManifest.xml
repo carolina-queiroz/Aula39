@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Tabuada"
         tools:targetApi="31">
         <activity
-            android:name=".resultado.ResultadoActivity"
+            android:name=".home.ResultadoActivity"
             android:exported="false" />
         <activity
             android:name=".home.HomeActivity"
